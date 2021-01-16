@@ -8,6 +8,12 @@ body{
     font-family: 'Karla', sans-serif;
     background-color: rgb(240, 240, 240);
 }
+body.black{
+    font-size: 13pt;
+    font-family: 'Karla', sans-serif;
+    background-color: #5E5E5C;
+}
+
 h1, h2{
     padding: 18px;
 }
@@ -54,6 +60,23 @@ img{
     color: gray;
     font-weight: 400;
 }
+body.black .superior{
+    background-color: #313131;
+}
+body.black .superior h1{
+    color: #fbff00;
+    font-size: 25pt;
+    font-weight: 700;
+}
+body.black .superior h2{
+    color:#FFCA09;
+    
+    font-weight: 700;
+}
+body.black .superior p{
+    color: #d6d6d6;
+    font-weight: 400;
+}
 
 .inferior-esq{
     color: #ffffff;
@@ -61,6 +84,10 @@ img{
     position: relative;
     width: 100%;
     display: block;
+}
+body.black .inferior-esq{
+    color: #030302;
+    background-color: #FFCA09;
 }
 div.inferior-esq{
     height: 290px;
@@ -82,6 +109,12 @@ button:hover{
     color: black;
     cursor: pointer;
 }
+body.black button{
+    background-color: #030302;
+}
+body.black button:hover{
+    background-color: #5E5E5C;
+}
 
 .inferior-dir{
     color: #ffffff;
@@ -89,6 +122,9 @@ button:hover{
     position: relative;
     width: 100%;
     display: block;
+}
+body.black .inferior-dir{
+    background-color: #030302;
 }
 .inferior-dir p{
     padding-top: 20px;
@@ -141,6 +177,9 @@ button:hover{
         background-image: url('../imagens/white-background.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+    body.black{
+        background-image: url('../imagens/dark-background.jpg');
     }
     .container{
         display: grid;

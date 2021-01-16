@@ -6,12 +6,30 @@
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilizacao/estilo-black.css">
+    <link rel="stylesheet" href="estilizacao/estilo.css">
     <title>Desafio Grid de Preço</title>
+    
 </head>
 <body>
-    <a href="index-light.html">
-        <img title="White Version" src="imagens/interruptor-acender.png">
+    <script>
+        const urlParams = new URLSearchParams(window.location.search)
+        const theme = urlParams.get('theme')
+        console.log(window.document.getElementsByTagName('body'))
+        if(theme=='black'){
+            window.document.getElementsByTagName('body')[0].className='black'
+        }
+
+        function changetheme(){
+            if(theme=='black'){
+                window.location.href='?theme=white'
+            }
+            else{
+                window.location.href='?theme=black'
+            }
+        }
+    </script>
+    <a onclick="changetheme()" href="#!">
+        <img title="Other Version" src="imagens/interruptor-acender.png">
     </a>
     <div class="container">
         <div class="superior">
